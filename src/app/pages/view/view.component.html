@@ -1,0 +1,22 @@
+<nz-table #basicTable style="max-height: 550px;overflow-y: auto;" *ngIf = "!dataChanged">
+    <thead>
+      <tr style="position: sticky;top: 0;background-color: #f0f0f0;z-index: 1;">
+        <th>Department Name</th>
+        <th>Description</th>
+        <th>Manager</th>
+        <th>Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let data of departs">
+        <td>{{ data.DepartmentName }}</td>
+        <td>{{ data.Description }}</td>
+        <td>{{ data.Manager }}</td>
+        <td>
+          <a (click)="Update(data.id)"><span nz-icon nzType="edit" nzTheme="outline" style="color:green;" ></span></a>&nbsp;&nbsp;&nbsp;
+          <a (click)="Deletedepartments(data.id)"><span nz-icon nzType="delete" nzTheme="outline" style="color: red;"></span></a>&nbsp;&nbsp;&nbsp;
+          <a (click)="viewDetail(data.id)"><span nz-icon nzType="unordered-list" nzTheme="outline"></span></a>
+        </td>
+      </tr>
+    </tbody>
+  </nz-table>

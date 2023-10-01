@@ -1,0 +1,27 @@
+<div class="form-container" style="justify-content: center;align-items: center;display: flex;">
+    <form [formGroup]="registrationform" (ngSubmit)="proceedregistration()">
+      <div class="form-item">
+        <label for="name" class="form-label">Department Name:</label>
+        <input type="text" id="name" formControlName = "DepartmentName" name="name" class="form-input" placeholder="Enter the Department Name" />
+      </div>
+      <div class="form-item">
+        <label for="description" class="form-label">Description:</label>
+        <input type="text" id="email" name="email" formControlName = "Description" class="form-input" placeholder="Enter the Description Here" />
+      </div>
+      <div class="form-item">
+        <label for="manager" class="form-label">Manager:</label>
+        <select id="country" name="manager" class="form-select" formControlName = "Manager">
+          <option value="">Select a Manager</option>
+          <option value=""></option>
+          <option *ngFor="let datas of data" [value]="datas.DepartmentName">
+            {{ datas.DepartmentName }}
+          </option>
+        </select>
+      </div>
+      <div class="form-item">
+        <button type="submit" class="form-button">Submit</button>&nbsp;&nbsp;&nbsp;
+        <button type="button" (click)="onCancel()" class="form-button" style="background-color: red;"> Cancel</button>
+      </div>
+    </form>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/antd/4.16.4/antd.min.js"></script>

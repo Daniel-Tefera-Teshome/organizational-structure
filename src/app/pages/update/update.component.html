@@ -1,0 +1,38 @@
+<div class="container">
+    <h3 style="color: darkblue;font-size: large;align-content: center; font-family: 'Times New Roman', Times, serif;font-weight: bold;font-style: oblique;">Do you want to update this department information?</h3>
+    <div class="screen">
+        <div class="screen__content">
+            <form class="login" id="signup" [formGroup]="updationform" (ngSubmit)="updatedepartment()">
+                <div class="login__field">
+                    <i class="login__icon fas fa-user"></i>
+                    <input type="text" class="login__input" placeholder="Department Name"
+                        formControlName="DepartmentName">
+                </div>
+                <div class="login__field">
+                    <i class="login__icon fas fa-lock"></i>
+                    <input type="text" class="login__input" placeholder="Description" formControlName="Description">
+                </div>
+                <div class="login__field">
+                    <i class="login__icon fas fa-lock"></i>
+                    <!-- <input type="text" class="login__input" placeholder="Manager" formControlName="Manager"> -->
+                    <div class="form-item">
+                        <select id="country" name="manager" class="form-select" formControlName = "Manager">
+                          <!-- <option value="">Select a Manager</option> -->
+                          <option value=""></option>
+                          <option *ngFor="let datas of data" [value]="datas.DepartmentName">
+                            {{ datas.DepartmentName }}
+                          </option>
+                        </select>
+                      </div>
+                </div>
+                <div style="white-space: nowrap;">
+                    <button type="submit" class="button login__submit" style=" display: inline-block;margin-right: 10px;">
+                        <span class="button__text">Update Now </span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                    <button nz-button mat-dialog-close routerLink="/pages/view" type="button" class="button login__submit" style="background-color: red;display: inline-block;margin-right: 10px;">
+                        <span class="button__text" >Cancel</span>
+                        <i class="button__icon fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </form>

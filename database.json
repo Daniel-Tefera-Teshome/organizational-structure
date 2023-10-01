@@ -1,0 +1,110 @@
+{
+  "Departments": [
+    {
+      "id": 4,
+      "DepartmentName": "CTO",
+      "Description": "Chief Task Officer",
+      "Manager": "CEO"
+    },
+    {
+      "id": 5,
+      "DepartmentName": "CFO",
+      "Description": "Chief Finance Officer",
+      "Manager": "CEO"
+    },
+    {
+      "DepartmentName": "CMO",
+      "Description": "Chief Mat Officer",
+      "Manager": "CEO",
+      "id": 6
+    },
+    {
+      "id": 8,
+      "DepartmentName": "Auditor",
+      "Description": "Auditors",
+      "Manager": "CFO"
+    },
+    {
+      "id": 12,
+      "DepartmentName": "AA",
+      "Description": "FD",
+      "Manager": "DF"
+    },
+    {
+      "id": 13,
+      "DepartmentName": "Bb",
+      "Description": "FFG",
+      "Manager": "AA"
+    },
+    {
+      "DepartmentName": "IT",
+      "Description": "Information Technology",
+      "Manager": "IOT",
+      "id": 17
+    },
+    {
+      "DepartmentName": "IOT",
+      "Description": "IOT",
+      "Manager": "CEO",
+      "id": 19
+    },
+    {
+      "DepartmentName": "CEO",
+      "Description": "Chief Executive Officer",
+      "Manager": "",
+      "id": 20
+    }
+  ],
+  "Employee": [
+    {
+      "FirstName": "Daniel",
+      "LastName": "Tefera",
+      "Department": "CEO",
+      "UserName": "@daniel",
+      "Password": "dani@dani",
+      "Email": "danieltefera14@gmail.com",
+      "Phone": "0919319791",
+      "id": 1
+    },
+    {
+      "FirstName": "Nega",
+      "LastName": "Agmas",
+      "Department": "CFO",
+      "UserName": "@nega",
+      "Password": "nega@nega",
+      "Email": "nega@gmail.com",
+      "Phone": "0954319787",
+      "id": 2
+    },
+    {
+      "FirstName": "Derso",
+      "LastName": "Nolawi",
+      "Department": "CTO",
+      "UserName": "@derso",
+      "Password": "derso@derso",
+      "Email": "derso@gmail.com",
+      "Phone": "0989319856",
+      "id": 3
+    },
+    {
+      "FirstName": "Gech",
+      "LastName": "Teshome",
+      "Department": "CEO",
+      "UserName": "@gech",
+      "Password": "gech@gech",
+      "Email": "gech@gmail.com",
+      "Phone": "0919389654",
+      "id": 1
+    },
+    {
+      "FirstName": "kl",
+      "LastName": "cdf",
+      "Department": null,
+      "UserName": "fd",
+      "Email": "fd",
+      "Phone": "fd",
+      "Password": null,
+      "id": 4
+    }
+  ]
+}

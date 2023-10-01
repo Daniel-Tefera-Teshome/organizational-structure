@@ -1,0 +1,18 @@
+<div style="justify-content: center;align-items: center;display: flex;color: darkblue;font-size: large;font-family: 'Times New Roman', Times, serif;font-weight:bold;font-style: oblique;">
+    <nz-card class="card" nzTitle="Department Detail Information" >
+        <form nz-form>
+            <div>
+                <p><b>Department Name: </b>{{DepartmentName}}</p>
+                <p><b>Description:</b>{{Description}}</p>
+                <p><b>Managing Department: </b>{{Manager}}</p>
+            </div>
+            <nz-form-item nz-row class="register-area">
+                <nz-form-control >
+                    <button id = "cancelbutton" routerLink="/pages/view" nz-button mat-dialog-close style="background-color: red" name="clear">
+                        Close
+                    </button>
+                </nz-form-control>
+            </nz-form-item>
+        </form>
+    </nz-card>
+</div>
